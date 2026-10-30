@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MY BOT HOST</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#0b0d14;color:#f5f6ff;font-family:Arial,sans-serif;padding:22px}
+header{font-size:24px;font-weight:bold;margin:12px 0 28px}
+header span{color:#9d8cff}
+.card{background:#151824;border:1px solid #292d40;border-radius:16px;padding:20px;margin-bottom:18px}
+h2{font-size:19px;margin-top:0}
+p{color:#a6abc0;font-size:14px}
+input{width:100%;padding:13px;margin:8px 0 14px;border-radius:9px;border:1px solid #373c51;background:#0d101a;color:white}
+button{width:100%;padding:14px;border:0;border-radius:9px;background:#8970ff;color:white;font-size:15px;font-weight:bold}
+.status{color:#42e6a4;font-weight:bold}
+.timer{font-size:32px;font-weight:bold;margin:15px 0}
+</style>
+</head>
+<body>
+<header>MY BOT <span>HOST 🖤</span></header>
+<div class="card">
+<h2>Deploy Bot</h2>
+<p>GitHub Repository URL</p>
+<input id="repo" placeholder="https://github.com/username/bot">
+<p>Start command</p>
+<input id="command" placeholder="node index.js">
+<button onclick="alert('Dashboard demo only. Backend setup is required to run your bot.')">Deploy Bot</button>
+</div>
+<div class="card">
+<h2>Bot Status</h2>
+<p id="status">Your bot is stopped</p>
+<div class="timer" id="timer">00:00:00</div>
+<p>Running time</p>
+</div>
+<div class="card">
+<h2>Live Logs</h2>
+<p>Connect your backend to view real bot logs.</p>
+</div>
+</body>
+</html>
